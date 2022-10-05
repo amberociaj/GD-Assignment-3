@@ -6,6 +6,8 @@ public class EnemyHealth : MonoBehaviour
 {
     public float enemyHealth = 100f;
 
+    public GameObject Orb;
+
     public void DeductHealth(float deductHealth)
     {
         enemyHealth -= deductHealth;
@@ -19,5 +21,6 @@ public class EnemyHealth : MonoBehaviour
     void EnemyDead()
     {
         Destroy(gameObject);
+        Orb.SetActive(true);
     }
 }
