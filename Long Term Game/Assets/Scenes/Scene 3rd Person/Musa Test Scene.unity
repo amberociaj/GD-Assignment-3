@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 4727677e88060a44796b4e4ee8126eb7, type: 2}
+--- !u!1 &100959256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 100959257}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &100959257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100959256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.549, y: 0.6684252, z: 2.802}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1472512723}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &179225460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,7 +1099,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810897293}
   m_LocalRotation: {x: 0.09862064, y: -0.000000030569776, z: 0.00000000302958, w: 0.9951251}
-  m_LocalPosition: {x: 13.71, y: 6.9, z: -4.26}
+  m_LocalPosition: {x: 13.71, y: 6.9, z: -4.457}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1573,7 +1604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 554207342413158158, guid: 9ca1f1a607842b24faa3d3283c493c97, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.26
+      value: -4.457
       objectReference: {fileID: 0}
     - target: {fileID: 554207342413158158, guid: 9ca1f1a607842b24faa3d3283c493c97, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1621,11 +1652,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 554207342886461173, guid: 9ca1f1a607842b24faa3d3283c493c97, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000002246423
+      value: 0.00000002246423
       objectReference: {fileID: 0}
     - target: {fileID: 554207342886461173, guid: 9ca1f1a607842b24faa3d3283c493c97, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000009352933
+      value: -0.000000009352933
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ca1f1a607842b24faa3d3283c493c97, type: 3}
@@ -1636,6 +1667,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1472512727, guid: 35d89e857e5c5be448f0443e49c765cd, type: 3}
+      propertyPath: speed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472512727, guid: 35d89e857e5c5be448f0443e49c765cd, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 6020798200198114459, guid: f90b6739d2cc9ea43b3836d2a86a8ec2, type: 3}
+    - target: {fileID: 1472512727, guid: 35d89e857e5c5be448f0443e49c765cd, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 100959257}
     - target: {fileID: 3591086401379419440, guid: 35d89e857e5c5be448f0443e49c765cd, type: 3}
       propertyPath: m_Name
       value: Third Person Player
@@ -1654,7 +1697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3591086401379419441, guid: 35d89e857e5c5be448f0443e49c765cd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.99
+      value: 6.793
       objectReference: {fileID: 0}
     - target: {fileID: 3591086401379419441, guid: 35d89e857e5c5be448f0443e49c765cd, type: 3}
       propertyPath: m_LocalRotation.w

@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    public float damage = 10f;
     public float range = 100f;
+    
+    public Transform spawnPoint;
+    public GameObject bullet;
+    public float speed = 5f;
 
-    public GameObject Gun;
     public GameObject impactEffect;
 
-    float damageEnemy = 20f;
 
     // Update is called once per frame
     void Update()
@@ -21,19 +22,11 @@ public class Shooting : MonoBehaviour
         }
     }
 
-    void Shoot()
+    private void Shoot()
     {
-        RaycastHit hit;
-        if(Physics.Raycast(Gun.transform.position, Gun.transform.forward, out hit, range))
-        {
-            Debug.Log(hit.transform.name);
+        GameObject cB = Instantiate(bullet, spawnPoint.position, bullet.transform.rotation);
+        Rigidbody rig = cB.GetComponent<Rigidbody>();
 
-            GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-            Destroy(impactGO, 2f);
-
-            EnemyHealth enemyHealthScript = hit.transform.GetComponent<EnemyHealth>();
-            enemyHealthScript.DeductHealth(damageEnemy);
-            Debug.Log("Hit");
-        }
+        rig.AddForce(spawnPoint.forward * speed, ForceMode.Impulse);
     }
 }
