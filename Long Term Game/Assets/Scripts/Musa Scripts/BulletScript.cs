@@ -9,14 +9,13 @@ public class BulletScript : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
-
         if (collision.gameObject.CompareTag("Enemy"))
         {
             EnemyHealth enemyHealthScript = collision.transform.GetComponent<EnemyHealth>();
             enemyHealthScript.DeductHealth(damageEnemy);
             Debug.Log("Hit");
+            Destroy(gameObject);
         }
-        
+        Destroy(gameObject);
     }
 }
