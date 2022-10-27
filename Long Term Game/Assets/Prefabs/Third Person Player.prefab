@@ -206,7 +206,6 @@ GameObject:
   - component: {fileID: 3591086401379419447}
   - component: {fileID: 3591086401379419446}
   - component: {fileID: 3591086401379419444}
-  - component: {fileID: 1472512727}
   m_Layer: 0
   m_Name: Third Person Player
   m_TagString: Player
@@ -264,7 +263,6 @@ MonoBehaviour:
   cam: {fileID: 0}
   speed: 10
   turnSmoothTime: 0.1
-  damageEnemy: 20
 --- !u!136 &3591086401379419444
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -279,22 +277,6 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1472512727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3591086401379419440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f519a8f2fb65f6d498c80ea2f6d5c31d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 20
-  range: 100
-  Gun: {fileID: 1978042971286074284}
-  impactEffect: {fileID: 1382686222315996278, guid: 96b4fbf462f2bd5469baf41ff2f47861, type: 3}
 --- !u!1 &3591086402202000049
 GameObject:
   m_ObjectHideFlags: 0
