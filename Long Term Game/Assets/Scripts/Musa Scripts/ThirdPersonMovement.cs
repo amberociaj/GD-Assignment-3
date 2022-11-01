@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
+
+    public AudioSource collectSound;
+    public GameObject scoreText;
+    public int theScore;
 
     // Update is called once per frame
     void Update()
@@ -27,6 +32,16 @@ public class ThirdPersonMovement : MonoBehaviour
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Orbs"))
+        {
+            collectSound.Play();
+            theScore += 50;
+            scoreText.GetComponent<Text>().text = "ORBS: " + theScore;
         }
     }
 }

@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class ScoringSystem : MonoBehaviour
 {
-    public GameObject scoreText;
-    public int theScore;
-    public AudioSource collectSound;
 
     private void Start()
     {
@@ -16,15 +13,12 @@ public class ScoringSystem : MonoBehaviour
 
     IEnumerator PillLifeSpan()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(25f);
         Destroy(gameObject);
     }
 
     void OnTriggerEnter(Collider other)
     {
-        collectSound.Play();
-        theScore += 50;
-        scoreText.GetComponent<Text>().text = "ORBS: " + theScore;
         Destroy(gameObject);
     }
 }
