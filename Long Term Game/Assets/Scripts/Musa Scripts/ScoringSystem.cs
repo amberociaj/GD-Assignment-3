@@ -9,6 +9,17 @@ public class ScoringSystem : MonoBehaviour
     public int theScore;
     public AudioSource collectSound;
 
+    private void Start()
+    {
+        StartCoroutine(PillLifeSpan());
+    }
+
+    IEnumerator PillLifeSpan()
+    {
+        yield return new WaitForSeconds(10f);
+        Destroy(gameObject);
+    }
+
     void OnTriggerEnter(Collider other)
     {
         collectSound.Play();

@@ -5,8 +5,13 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public float enemyHealth = 100f;
+    public static bool enemyIsDead;
 
-    public GameObject Orb;
+
+    void Start()
+    {
+        enemyIsDead = false;
+    }
 
     public void DeductHealth(float deductHealth)
     {
@@ -18,9 +23,9 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    void EnemyDead()
+    public void EnemyDead()
     {
-        Destroy(gameObject);
-        Orb.SetActive(true);
+        enemyIsDead = true;
+        Debug.Log("Deadz");
     }
 }
