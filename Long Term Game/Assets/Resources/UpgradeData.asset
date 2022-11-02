@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76b67c28021074e44aa2a98a49c8b762, type: 3}
+  m_Name: UpgradeData
+  m_EditorClassIdentifier: 
+  upgradeItems:
+  - itemName: Lightning
+    isUnlocked: 1
+    unlockCost: 0
+    unlockedLevel: 0
+    attackLevel:
+    - unlockCost: 5000
+      Attacklevel: 1
+    - unlockCost: 10000
+      Attacklevel: 2
+    - unlockCost: 15000
+      Attacklevel: 3
+    - unlockCost: 25000
+      Attacklevel: 4
+    - unlockCost: 35000
+      Attacklevel: 5
+  - itemName: Fire Bolt
+    isUnlocked: 1
+    unlockCost: 5000
+    unlockedLevel: 0
+    attackLevel:
+    - unlockCost: 6000
+      Attacklevel: 1
+    - unlockCost: 12000
+      Attacklevel: 2
+    - unlockCost: 18000
+      Attacklevel: 3
+    - unlockCost: 36000
+      Attacklevel: 4
+    - unlockCost: 48000
+      Attacklevel: 5
+  - itemName: Ice Attack
+    isUnlocked: 1
+    unlockCost: 5000
+    unlockedLevel: 0
+    attackLevel:
+    - unlockCost: 10000
+      Attacklevel: 1
+    - unlockCost: 15000
+      Attacklevel: 2
+    - unlockCost: 30000
+      Attacklevel: 3
+    - unlockCost: 45000
+      Attacklevel: 4
+    - unlockCost: 60000
+      Attacklevel: 5

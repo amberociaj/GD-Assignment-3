@@ -13,6 +13,8 @@ public class ThirdPersonMovement : MonoBehaviour
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
 
+    public Vector3 moveDir;
+
     public AudioSource collectSound;
     public GameObject scoreText;
     public int theScore;
