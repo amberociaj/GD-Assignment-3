@@ -18,7 +18,7 @@ public class FireBurst : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             burst.gameObject.SetActive(true);
-            StartCoroutine(AttackBurst());
+            //StartCoroutine(AttackBurst());
         }
     }
 
