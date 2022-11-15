@@ -14,9 +14,9 @@ public class PlayerHealth : MonoBehaviour
         health = maxHealth;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int amount)
     {
-        health -= damage;
+        health -= amount;
         if(health <= 0)
         {
             Destroy(gameObject);
