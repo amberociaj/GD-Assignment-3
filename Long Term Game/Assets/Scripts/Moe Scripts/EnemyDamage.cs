@@ -7,10 +7,11 @@ public class EnemyDamage : MonoBehaviour
     public int damage = 2;
     public PlayerHealth playerHealth;
 
-    private void OnCollisionEnter(Collision other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if(other.gameObject.tag == "Player")
+        if(collision.gameObject.tag == "Player")
         {
+            Debug.Log("EnemyHit");
             playerHealth.TakeDamage(damage);
 
         }
