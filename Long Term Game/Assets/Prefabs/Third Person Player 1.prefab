@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 1263110027635190693}
   - component: {fileID: 1263110027635190694}
   - component: {fileID: 1263110027635190695}
-  - component: {fileID: 1263110027635190696}
   m_Layer: 0
   m_Name: Third Person Player 1
   m_TagString: Player
@@ -174,20 +173,6 @@ MonoBehaviour:
   Slot1: {fileID: 4260975296496747185}
   Slot2: {fileID: 2328763354141883704}
   Slot3: {fileID: 2328763353811827698}
---- !u!114 &1263110027635190696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263110027635190700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55d3f3d73872a314691f75dbdd4c5c10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dashSpeed: 35
-  dashTime: 0.5
 --- !u!1 &1263110028085920574
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,7 +417,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2328763353811827693
 Transform:
   m_ObjectHideFlags: 0
@@ -526,7 +511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 100
   spawnPoint: {fileID: 2328763355121356906}
-  bullet: {fileID: 0}
+  bullet: {fileID: 2268640421590402943, guid: ed04a487e5d66cd4099cf6f64ed4dd88, type: 3}
   speed: 15
   impactEffect: {fileID: 0}
 --- !u!1 &2328763353870332103
@@ -757,7 +742,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1097290911017945394
 Transform:
   m_ObjectHideFlags: 0

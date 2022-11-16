@@ -19,6 +19,8 @@ public class ThirdPersonMovement : MonoBehaviour
     public GameObject scoreText;
     public int theScore;
 
+    public GameObject playerShield;
+
     // Update is called once per frame
     void Update()
     {
@@ -34,6 +36,15 @@ public class ThirdPersonMovement : MonoBehaviour
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.X))
+        {
+            playerShield.SetActive(true);
+        }
+        else
+        {
+            playerShield.SetActive(false);
         }
     }
 
