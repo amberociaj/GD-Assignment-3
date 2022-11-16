@@ -7,6 +7,7 @@ namespace UpgradeSystem
     [CreateAssetMenu(fileName = "UpgradeData",menuName = "Scriptable/CreateUpgradeData")]
     public class UpgradeSaveScriptable : ScriptableObject
     {
+        public int selectedIndex;
         public UpgradeItem[] upgradeItems;
     }
 

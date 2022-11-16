@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76b67c28021074e44aa2a98a49c8b762, type: 3}
   m_Name: UpgradeData
   m_EditorClassIdentifier: 
+  selectedIndex: 0
   upgradeItems:
   - itemName: Lightning
     isUnlocked: 1
     unlockCost: 0
-    unlockedLevel: 0
+    unlockedLevel: 1
     attackLevel:
     - unlockCost: 5000
       Attacklevel: 1
@@ -31,7 +32,7 @@ MonoBehaviour:
   - itemName: Fire Bolt
     isUnlocked: 1
     unlockCost: 5000
-    unlockedLevel: 0
+    unlockedLevel: 1
     attackLevel:
     - unlockCost: 6000
       Attacklevel: 1
@@ -46,7 +47,7 @@ MonoBehaviour:
   - itemName: Ice Attack
     isUnlocked: 1
     unlockCost: 5000
-    unlockedLevel: 0
+    unlockedLevel: 1
     attackLevel:
     - unlockCost: 10000
       Attacklevel: 1
